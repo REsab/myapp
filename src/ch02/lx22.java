@@ -20,16 +20,39 @@ public class lx22 {
 
 	public static void main(String[] args) {
 
+	while(true) {
+		
 		Scanner sc = new Scanner(System.in);
-System.out.println("输入三角形三个边:");
+		System.out.println("输入三角形三个边:");
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		int c = sc.nextInt();
 		
+		if(a+b>c&&a+c>b&&b+c>a) {//任意两边之和大于第三边，满足这个条件
+			
+			 System.out.println("是三角形");
+				System.out.println("三角形的周长是: "+(a+b+c));
+				System.out.println("三角形的面积是:"+(1/4.0*Math.sqrt((a+b+c)*(a+b-c)*(a+c-b)*(b+c-a))));//（海伦公式）
+			 break;
+		}else {
+			 
+			 System.out.println("不能构成三角形,请重新运行");
+		}
 		
-		System.out.println("三角形的周长是: "+(a+b+c));
+		
+		
+		
+	}
+	
 		
 
+	
+
+	
+			 
+			 
+	
+		
 	}
 
 }
