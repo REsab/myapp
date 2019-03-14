@@ -33,7 +33,7 @@ public class lx22 {
 			 System.out.println("是三角形");
 				System.out.println("三角形的周长是: "+(a+b+c));
 				System.out.println("三角形的面积是:"+(1/4.0*Math.sqrt((a+b+c)*(a+b-c)*(a+c-b)*(b+c-a))));//（海伦公式）
-			 break;
+			 break;//跳出死循环
 		}else {
 			 
 			 System.out.println("不能构成三角形,请重新运行");
